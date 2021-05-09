@@ -1,55 +1,99 @@
-body {
-  background-color: #809fff;
-  color: #000;
-  font-family: monospace;
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
 }
+
+:root {
+  /* COLORS */
+  --color1: #01dce6;
+  --color2: #0dfcc5;
+  --color3: #0db1fc;
+  --color4: #0cf27c;
+  --color5: #0c6ef2;
+
+  /* FONT */
+  --font-fam1: "Krona One", sans-serif;
+  --font-size1: 1.2rem;
+  --font-size2: 2.7rem;
+}
+
+body {
+  background-color: var(--color1);
+  height: 100%;
+  font-family: var(--font-fam1);
+  font-size: var(--font-size1);
+}
+
+/* TITLE */
 #title {
-  background-color: #1a53ff;
-  color: #000;
-  text-shadow: 2px 2px 2px blue;
-  font-size: 30px;
   align-content: center;
   padding: 30px 30px;
-  width: 80%;
+  width: 100%;
   margin: 30px 50px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50px;
   text-align: center;
+  background-color: var(--color5);
+  font-size: var(--font-size2);
 }
 
 #description {
   font-style: italic;
-  margin-bottom: 50px;
   text-align: center;
+  padding: 0.7em;
+  margin: 2em auto;
+  background-color: var(--color2);
 }
 
+/* FORM */
 #survey-form {
-  background-color: #1a53ff;
-  width: 70%;
-  margin: auto;
-  padding: 30px;
-  border: 5px solid #333;
-  border-top: 35px solid #333;
-  border-bottom: 35px solid #333;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  margin: 5em auto;
+  background-color: var(--color5);
 }
 
+/* FORM ELEMENTS */
 h3 {
-  background-color: #809fff;
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 15px;
-  font-variant-caps: petite-caps;
-  line-height: 25px;
-  word-spacing: 15px;
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  margin: auto;
+  height: 5em;
+  width: 100%;
+
+  background-color: var(--color3);
+  font-size: var(--font-size1);
 }
 
-#name {
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  width: 100%;
+  padding: 1.2em;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em;
+  margin-left: 20px;
+  font-size: var(--font-size1);
+}
+/* #name {
 }
 
 #email {
@@ -84,4 +128,4 @@ h3 {
 
 #submit {
   margin: 50px;
-}
+} */
