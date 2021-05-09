@@ -12,24 +12,26 @@
     <p id="description">Please fill out the survey below</p>
 
     <form id="survey-form">
-      <h3>What is your name?</h3>
+      <h3>What's your name?</h3>
       <label id="name-label" for="name">
         Name:
         <input
           id="name"
           type="text"
+          autocomplete="off"
           name="name"
           required
           placeholder="Enter your name"
         />
       </label>
 
-      <h3>Share your email for the newest updates!</h3>
+      <h3>Whats's your email address?</h3>
       <label id="email-label" for="email">
         Email:
         <input
           id="email"
           type="email"
+          autocomplete="off"
           required
           placeholder="Enter your email"
         />
@@ -41,40 +43,57 @@
         <input
           id="number"
           type="number"
+          autocomplete="off"
           name="number"
-          placeholder="Enter numbers here"
+          placeholder="Enter your age"
           min="0"
           max="9999"
         />
       </label>
 
-      <h3>Would you recommend us to your friends?</h3>
+      <h3>What's your gender?</h3>
       <label id="dropdown-label">
         <select id="dropdown" name="dropdown">
-          <option value="">Option one</option>
-          <option value="">Option two</option>
-          <option value="">Option three</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">...</option>
         </select>
       </label>
 
-      <h3>Radio Buttons:</h3>
-      <label id="radio-buttons">
+      <h3>Rate this survey on a scale of 1 - 10</h3>
+      <label id="radio-label">
         <input type="radio" name="1" value="First Value" />
         <input type="radio" name="1" value="Second Value" />
         <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
+        <input type="radio" name="1" value="Third Value" />
       </label>
 
-      <h3>Checkboxes:</h3>
+      <h3>Do you have any pets?</h3>
       <label id="checkbox-label">
-        <input type="checkbox" name="checkbox_1" value="1" />
-        <input type="checkbox" name="checkbox_2" value="2" />
-        <input type="checkbox" name="checkbox_3" value="3" />
+        <label class="checkbox-names" for="checkbox_1">
+          Dog
+          <input type="checkbox" name="checkbox_1" value="1" />
+        </label>
+        <label class="checkbox-names" for="checkbox_2">
+          Cat
+          <input type="checkbox" name="checkbox_2" value="2" />
+        </label>
+        <label class="checkbox-names" for="checkbox_3">
+          Other
+          <input type="checkbox" name="checkbox_3" value="3" />
+        </label>
       </label>
 
-      <h3>Leave a comment here:</h3>
+      <h3>Leave a comment below:</h3>
       <label id="textarea-label">
-        <textarea id="textarea" name="name" rows="8" cols="80">
-          Textarea for additional comments here!
+        <textarea id="textarea" name="name" rows="10" cols="80">
+Enter your comments here!
         </textarea>
       </label>
 
