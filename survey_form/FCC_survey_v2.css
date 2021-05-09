@@ -124,9 +124,16 @@ input {
   outline: none;
 }
 
+/* CHECKBOX */
 #checkbox-label input {
   height: 1.3em;
+  width: 0.4;
   outline: none;
+}
+
+.checkbox-names {
+  width: 50%;
+  font-size: 1em;
 }
 
 /* TEXTAREA */
@@ -140,6 +147,7 @@ input {
 
 #textarea {
   resize: none;
+  width: 100%;
 }
 
 #submit {
