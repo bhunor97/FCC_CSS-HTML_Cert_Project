@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-doc {
+  font-family: Times;
+  font-size: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.navbar-container {
+  border: 0.5px solid black;
+  background-color: lightblue;
+  grid-column: 1/2;
+  grid-row: 1/6;
+  line-height: 50px;
+  text-align: center;
+}
+
+.section-container {
+  border: 0.5px solid black;
+  background-color: lightgreen;
+  grid-column: 2/8;
+  grid-row: 1/6;
+
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  line-height: 35px;
+  padding-top: 35px;
+}
+
+.section-container ul {
+  list-style: none;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.navbar-container h1 {
+  font-variant-caps: petite-caps;
+}
+
+.navbar-container a {
+  text-decoration: none;
+}
+
+.navbar-container ul {
+  list-style: none;
+}
+
+#navbar {
+  position: fixed;
+  padding: 25px;
+}
+
+/* First shrink changes*/
+@media (max-width: 1700px) {
+  .navbar-container {
+    background-color: lightgreen;
+    grid-column: 1/3;
+    grid-row: 1/6;
+  }
+  .section-container {
+    background-color: lightblue;
+    grid-column: 3/8;
+    grid-row: 1/6;
+  }
+}
+
+/* Second shrink changes*/
+@media (max-width: 900px) {
+  .navbar-container {
+    background-color: lightblue;
+    grid-column: 1/4;
+    grid-row: 1/6;
+  }
+  .section-container {
+    background-color: lightgreen;
+    grid-column: 4/8;
+    grid-row: 1/6;
+  }
+}
