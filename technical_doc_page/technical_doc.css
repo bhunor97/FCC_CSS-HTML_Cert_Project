@@ -18,7 +18,7 @@
   /* FONTS */
   --fontFam1: "Poppins", sans-serif;
   --fontSizeLarge: 1.5rem;
-  --fontSizeMedium: 1.2rem;
+  --fontSizeMedium: 1rem;
   --fontSizeSmall: 0.7rem;
 }
 
@@ -100,7 +100,6 @@
 
 /* SECTION */
 .section-container {
-  /* border: 0.5px solid black; */
   grid-column: 2/8;
   grid-row: 1/6;
 
@@ -128,29 +127,103 @@ hr {
   margin: 5%;
 }
 
-/* First shrink changes*/
+/* MEDIA QUERIES */
+/* 1700px */
 @media (max-width: 1700px) {
-  .navbar-container {
-    grid-column: 1/3;
-    grid-row: 1/6;
+  #navbar {
+    width: 20%;
+    background-color: var(--color2);
   }
-  /* .section-container {
-    background-color: lightblue;
-    grid-column: 3/8;
-    grid-row: 1/6;
-  } */
+
+  #main-doc {
+    font-family: var(--fontFam1);
+    font-size: var(--fontSizeMedium);
+    background-image: linear-gradient(90deg, var(--color1) 10%, var(--color4));
+  }
+
+  .section-container {
+    line-height: 1.7em;
+    margin: 2.5% 10%;
+  }
 }
 
-/* Second shrink changes*/
-/* @media (max-width: 900px) {
-  .navbar-container {
-    background-color: lightblue;
-    grid-column: 1/4;
-    grid-row: 1/6;
+/* 620px */
+@media (max-width: 620px) {
+  #navbar {
+    width: 20%;
+    background-color: var(--color5);
   }
-  .section-container {
-    background-color: lightgreen;
-    grid-column: 4/8;
-    grid-row: 1/6;
+
+  #navbar header h1 {
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: var(--fontSizeMedium);
+    background-color: var(--color4);
   }
-} */
+
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  #navbar li {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    padding: 0.8em;
+    transition: 0.1s ease;
+  }
+
+  #navbar li a {
+    width: auto;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--fontSizeMedium);
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  #navbar {
+    width: 20%;
+    background-color: var(--color5);
+  }
+
+  #navbar header h1 {
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: var(--fontSizeSmall);
+    background-color: var(--color4);
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+
+  #navbar li {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    transition: 0.1s ease;
+  }
+
+  #navbar li a {
+    width: auto;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--fontSizeSmall);
+  }
+}

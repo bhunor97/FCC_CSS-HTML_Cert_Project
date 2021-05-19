@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\Head_First_JS_Projects"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\JavaScript_Projects"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\JS Sandbox"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\JS_Number_Guess_Game"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\MDN_Web_Docs"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\Mike_Dane_JS"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\SASS_Practice_Folder"
+		},
+		{
+			"path": "..\\..\\..\\JAVASCRIPT\\Small_Projects"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Grid_Sandbox"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FCC_CSS-HTML_Cert_Project"
+	}
+}
