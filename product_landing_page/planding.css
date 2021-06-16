@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coda", cursive;
+  /* border: 1px solid black; */
+}
+
+:root {
+  --color1: #6e8a94;
+  --color2: #8cb4b8;
+  --color3: #abbdb5;
+  --color4: #e5e8e0;
+  --color5: #d1dfd2;
+
+  --fontSmall: 0.5rem;
+  --fontMedium: 1.2rem;
+  --fontBig: 2rem;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: var(--color2);
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  border-bottom: 3px solid white;
+  font-size: var(--fontBig);
+}
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  flex: 2;
+}
+
+.nav-ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+
+.nav-ul li:hover {
+  background-color: var(--color3);
+}
+
+.nav-ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--fontMedium);
+}
+
+.nav-ul li a:hover {
+  color: black;
+}
+
+img {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
+/* IFRAME */
+iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 1em;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color4);
+}
+
+/* MAIN */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-color: var(--color3);
+}
+
+/* MAIN CONTENT */
+#main-content {
+  width: 80%;
+  margin-bottom: 10em;
+  background-color: var(--color4);
+}
+
+#main-content h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  background-color: var(--color2);
+  font-size: var(--fontBig);
+}
+
+.row1,
+.row2,
+.row3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  padding: 1em;
+}
+
+#computer,
+#keyboard,
+#mouse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  font-size: 3em;
+  background-color: white;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+  font-size: var(--fontMedium);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 15rem;
+  margin-bottom: 10em;
+  background-color: var(--color4);
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.2em;
+  width: 50%;
+  border-radius: 10px;
+  outline: none;
+}
+
+#submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5em;
+  width: 25%;
+  color: white;
+  border: none;
+  background-color: var(--color2);
+  font-size: var(--fontMedium);
+  transition: 0.2s;
+}
+
+#submit:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  height: 15rem;
+  margin: auto;
+  background-color: var(--color5);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container ul {
+  list-style: none;
+  width: 100%;
+}
+
+.footer-container li {
+  font-size: var(--fontMedium);
+  padding: 1em;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: red;
+  }
+  h1 {
+    color: yellow;
+  }
+}
